@@ -58,6 +58,10 @@ button:hover {
   background-color: #303168;
 }
 
+.resultadoVazio {
+  color: red !important;
+}
+
 #resultado {
   width: 210px;
   height: 30px;

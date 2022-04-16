@@ -13,35 +13,41 @@
       <p id="resultado"></p>
       <table class="teclado-calculadora">
         <tr>
-          <td><button class="btn-lilas">AC</button></td>
-          <td><button class="btn-lilas">C</button></td>
-          <td><button class="btn-lilas">%</button></td>
-          <td><button class="btn-lilas">/</button></td>
+          <td><button class="btn-lilas" onclick="back()">DEL</button></td>
+          <td><button class="btn-lilas" onclick="clean()">C</button></td>
+          <td><button class="btn-lilas" onclick="insert('%')">%</button></td>
+          <td><button class="btn-lilas" onclick="insert('/')">/</button></td>
         </tr>
         <tr>
-          <td><button class="btn-branco">7</button></td>
-          <td><button class="btn-branco">8</button></td>
-          <td><button class="btn-branco">9</button></td>
-          <td><button class="btn-lilas">X</button></td>
+          <td><button class="btn-branco" onclick="insert('7')">7</button></td>
+          <td><button class="btn-branco" onclick="insert('8')">8</button></td>
+          <td><button class="btn-branco" onclick="insert('9')">9</button></td>
+          <td><button class="btn-lilas" onclick="insert('*')">X</button></td>
         </tr>
         <tr>
-          <td><button class="btn-branco">4</button></td>
-          <td><button class="btn-branco">5</button></td>
-          <td><button class="btn-branco">6</button></td>
-          <td><button class="btn-lilas">-</button></td>
+          <td><button class="btn-branco" onclick="insert('4')">4</button></td>
+          <td><button class="btn-branco" onclick="insert('5')">5</button></td>
+          <td><button class="btn-branco" onclick="insert('6')">6</button></td>
+          <td><button class="btn-lilas" onclick="insert('-')">-</button></td>
         </tr>
         <tr>
-          <td><button class="btn-branco">1</button></td>
-          <td><button class="btn-branco">2</button></td>
-          <td><button class="btn-branco">3</button></td>
-          <td><button class="btn-lilas">+</button></td>
+          <td><button class="btn-branco" onclick="insert('1')">1</button></td>
+          <td><button class="btn-branco" onclick="insert('2')">2</button></td>
+          <td><button class="btn-branco" onclick="insert('3')">3</button></td>
+          <td><button class="btn-lilas" onclick="insert('+')">+</button></td>
         </tr>
         <tr>
-          <td colspan="2"><button class="btn-branco">0</button></td>
-          <td><button class="btn-branco">,</button></td>
-          <td><button id="btn-lilas-circulo">=</button></td>
+          <td colspan="2">
+            <button class="btn-branco" onclick="insert('0')">0</button>
+          </td>
+          <td><button class="btn-branco" onclick="insert('.')">,</button></td>
+          <td>
+            <button id="btn-lilas-circulo" onclick="calcular()">=</button>
+          </td>
         </tr>
       </table>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
